@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{% static 'meetings/favicon_io/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'meetings/favicon_io/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'meetings/favicon_io/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'meetings/favicon_io/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'meetings/favicon_io/site.webmanifest' %}">
+
+    <link rel="stylesheet" href="{% static 'meetings/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'meetings/icons/bootstrap/bootstrap-icons.css' %}"/>
+
+    <link rel="stylesheet" href="{% static 'meetings/css/meeting.css' %}"/>
+    <link rel="stylesheet" href="{% static 'meetings/css/fonts-face.css' %}"/>
+    
+    {% block title %}
+        {% if page_title %}
+            <title>{{ page_title }} | Meeting System</title>
+        {% else %}
+            <title>Meeting System</title>
+        {% endif %}
+    {% endblock %}
+
+</head>
+<body>
+
+    <div class="container-sm montserrat-regular-font">
+        {% block content %}{% endblock %}
+    </div>
+
+
+    <script src="{% static 'meetings/js/meeting.js' %}"></script>
+    <script src="{% static 'meetings/js/bootstrap.bundle.min.js' %}"></script>
+    
+</body>
+</html>

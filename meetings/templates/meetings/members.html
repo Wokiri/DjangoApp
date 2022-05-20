@@ -1,0 +1,21 @@
+{% extends 'meetings/base.html' %}
+{% load static %}
+{% load humanize %}
+
+{% block content %}
+
+{% include 'meetings/nav.html' %}
+
+{{ organization_members }}
+{{ page_obj }}
+
+<ul>
+    {% for member in organization_members %}
+        <li>{{ member.first_name }}</li>
+    {% empty %}
+        <li>No Members</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

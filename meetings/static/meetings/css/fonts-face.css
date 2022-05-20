@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../fonts/BarlowCondensed-Light.woff2') format('woff2'),
+        url('../fonts/BarlowCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../fonts/BarlowCondensed-Medium.woff2') format('woff2'),
+        url('../fonts/BarlowCondensed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../fonts/BarlowCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/BarlowCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.barlow-light-font {
+    font-family: 'Barlow Condensed';
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.barlow-medium-font {
+    font-family: 'Barlow Condensed';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.barlow-regular-font {
+    font-family: 'Barlow Condensed';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.montserrat-regular-font {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-style: normal;
+}
